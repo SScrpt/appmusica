@@ -1,0 +1,127 @@
+@import url('cancion.css');
+@import url('lista.css');
+
+/* Estructura  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --menuColor : #0E2C40;
+    --sideColor : #1A4A5A;
+    --boxColor : #0c1c278a;
+    --Texto1Color : #dbcdcd;
+    --Texto2Color : #FFFFFF;
+    font-family: 'Tilt Neon', cursive;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+img, audio {
+    width: 100%;
+}
+
+body {
+    background-color: var(--sideColor);
+}
+
+.contenedor {
+    display: flex;
+    min-height: 100vh;
+}
+
+.menu { 
+    width: 10%;
+    min-width: 200px;
+    background-color: var(--menuColor);
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.main { 
+    width: 70%; 
+    min-width: 390px;
+    background-image: linear-gradient(to right, var(--menuColor), var(--sideColor));
+}
+
+.sidebar { 
+    padding: 20px;
+    width: 25%; 
+    min-width: 300px;
+    background-color: var(--sideColor);
+}
+
+@media (max-width: 1050px) {
+    .contenedor { display: initial ;}
+    .menu, .main, .sidebar { width: 100%; min-height: 200px; min-width: 100%}
+    .main { background-image: linear-gradient(to bottom, var(--menuColor), var(--sideColor)); }
+    .menu { flex-direction: row; align-items: initial; overflow-x: auto; padding: 5px;}
+    .sidebar { padding: 5px; }
+}
+
+/* Fin Estructura  */
+
+/* Menu */
+.categoria {
+    min-width: 180px;
+    max-width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    background-color: var(--boxColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    text-align: center;
+    color: var(--Texto2Color);
+    font-weight: bold;
+}
+
+.categoria:hover {
+    cursor: pointer;
+    background-color: #0c1c27c2;
+}
+/* Fin Menu */
+
+.caja {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    border-radius: 20px;
+    background-color: var(--boxColor);
+    padding: 20px;
+}
+
+.caja > h3 {
+    color: var(--Texto2Color);
+    text-align: center;
+    font-size: 30px;
+}
+.caja > .favoritos > .favorito {
+    color: var(--Texto2Color);
+    border-radius: 15px;
+    background-color: #1a4a5a8c;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.caja > .favoritos > .favorito:hover {
+    background-color: #3072888c;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+.cancion-lista {
+    border-radius: 4px;
+    background-color: var(--boxColor);
+    height: 80px;
+    margin: 4px 4px 0px 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cancion-lista:hover {
+    background-color: #0c1c27c2;
+    cursor: pointer;
+}
+
+.cancion-lista > .id {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Texto1Color);
+    width: 8%;
+}
+
+.cancion-lista > .imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    padding: 3px;
+}
+
+.cancion-lista > .titulo {
+    display: flex;
+    padding-left: 10px;
+    justify-content: left;
+    align-items: center;
+    color: var(--Texto2Color);
+    width: clamp(100px, 50%, 100%);
+}
+
+.cancion-lista > .autor {
+    padding-left: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: var(--Texto1Color);
+    width: clamp(100px, 40%, 100%);
+}

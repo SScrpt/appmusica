@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Música</title>
+    <link rel="shortcut icon" href="icono.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="contenedor">
+        <div class="menu">
+            <div class="categoria" onclick="GenerarLista(1)">PLAYLIST 1</div>
+            <div class="categoria" onclick="GenerarLista(2)">PLAYLIST 2</div>
+            <div class="categoria" onclick="GenerarLista(3)">PLAYLIST 3</div>
+            <div class="categoria" onclick="GenerarLista(4)">PLAYLIST 4</div>
+            <div class="categoria" onclick="GenerarLista(5)">PLAYLIST 5</div>
+        </div>
+        <div class="main">
+            <div class="cancion">
+                <div class="imagen" id="imagen"></div>
+                <div class="info">
+                    <div class="titulo" id="titulo"></div>
+                    <div class="autor" id="autor"></div>
+                    <div class="opciones" id="control"></audio></div>
+                    <div class="fav" id="fav"></div>
+                </div>
+            </div>
+            <div id="lista"></div>
+        </div>
+        <div class="sidebar">
+            <div class="caja">
+                <h3>FAVORITOS</h3>
+                <div class="favoritos" id="favoritos"></div>
+            </div>
+        </div>
+    </div>
+    <script src="canciones.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
