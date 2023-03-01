@@ -28,6 +28,7 @@ const GenerarLista = ( playlist ) => {
         }
     }
 }
+GenerarLista(1);
 
 const GenerarFavoritos = ( lista ) => {
     favoritos.innerHTML = '';
